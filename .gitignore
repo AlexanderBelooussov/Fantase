@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+Bot/build
+Bot/cmake-build-debug
+Bot/release
+.idea
