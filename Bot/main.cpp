@@ -50,7 +50,7 @@ int main(int argc, char **argv)
     {
     }
     Game g;
-    Albux b(botIndex, botTeam, botName, g);
+    Fantase b(botIndex, botTeam, botName, g);
 
     while (true)
     {

@@ -12,7 +12,7 @@
 #include "maneuvers/Kickoff/SpeedFlipKickoff.h"
 #include "maneuvers/Kickoff/FrontFlipKickoff.h"
 
-Albux::Albux(int index, int team, std::string name, Game &game)
+Albux::Fantase(int index, int team, std::string name, Game &game)
         : Bot::Bot(index, team, name), renderer(index), info(game, index, team) {
     Field::initialize_soccar();
     maneuver = nullptr;
@@ -20,7 +20,7 @@ Albux::Albux(int index, int team, std::string name, Game &game)
     strategy = std::make_unique<Strategy>(info);
 }
 
-Input Albux::GetOutput(Game game) {
+Input Fantase::GetOutput(Game game) {
     info.update();
 
 

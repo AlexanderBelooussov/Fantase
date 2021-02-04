@@ -9,7 +9,7 @@
 #include <memory>
 
 
-class Albux : public Bot
+class Fantase : public Bot
 {
     GameInfo info;
     std::shared_ptr<Maneuver> maneuver;
