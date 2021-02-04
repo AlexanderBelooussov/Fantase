@@ -9,6 +9,10 @@
 #include <experimental/follow_path.h>
 #include "Shot.h"
 
+/**
+ * Shot Maneuver for hitting low shots
+ * @todo fix approach/dodge
+ */
 class DodgeShot : public Shot{
     float remaining_time = 99999;
     bool dodging = false;
@@ -20,12 +24,18 @@ class DodgeShot : public Shot{
 
     Dodge dodge;
 
+    //experimental
     Navigator navigator;
     FollowPath followpath;
     bool prepared = false;
-
     void preparePath();
 
+    /**
+     * Calculates the amount of time the jump button needs to be held
+     * @param height: how high the bot needs to jump
+     * @param gravity: in game gravity
+     * @return The amount of time the jump button needs to be held
+     */
     float calculateJumpTime(float height, float gravity = 650);
 
     void approachShot(vec3 shot_direction, vec3 desired_position);

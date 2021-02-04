@@ -1,0 +1,59 @@
+\hypertarget{class_strategy}{}\doxysection{Strategy Class Reference}
+\label{class_strategy}\index{Strategy@{Strategy}}
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_strategy_aefcb9f6719071b558a233d66235efbf7}\label{class_strategy_aefcb9f6719071b558a233d66235efbf7}} 
+{\bfseries Strategy} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&info)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_maneuver}{Maneuver}} $>$ \mbox{\hyperlink{class_strategy_a8cacf73bddd7713cb594506c477bdc04}{next\+Maneuver}} ()
+\item 
+int \mbox{\hyperlink{class_strategy_ae223bc49fcbbf3d05c87e7997741a2f2}{find\+Boost}} (bool only\+\_\+behind\+\_\+ball=true, std\+::unique\+\_\+ptr$<$ vec3 $>$ close\+\_\+point=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_strategy_af32ba11163ec918c9f9c498321ae41cf}\label{class_strategy_af32ba11163ec918c9f9c498321ae41cf}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_targeting}{Targeting}} $>$ {\bfseries targeting}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base strategy class This should only really have basic shot seeking capabilities More in depth strategy should be implemented in its own class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_strategy_ae223bc49fcbbf3d05c87e7997741a2f2}\label{class_strategy_ae223bc49fcbbf3d05c87e7997741a2f2}} 
+\index{Strategy@{Strategy}!findBoost@{findBoost}}
+\index{findBoost@{findBoost}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{findBoost()}{findBoost()}}
+{\footnotesize\ttfamily int Strategy\+::find\+Boost (\begin{DoxyParamCaption}\item[{bool}]{only\+\_\+behind\+\_\+ball = {\ttfamily true},  }\item[{std\+::unique\+\_\+ptr$<$ vec3 $>$}]{close\+\_\+point = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Finds a suitable boost pad to cllect 
+\begin{DoxyParams}{Parameters}
+{\em only\+\_\+behind\+\_\+ball} & True if it should only consider boosts that are behind the ball \\
+\hline
+{\em close\+\_\+point} & Point that the boost should be closest to, should we have multiple options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the boost pad 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_strategy_a8cacf73bddd7713cb594506c477bdc04}\label{class_strategy_a8cacf73bddd7713cb594506c477bdc04}} 
+\index{Strategy@{Strategy}!nextManeuver@{nextManeuver}}
+\index{nextManeuver@{nextManeuver}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{nextManeuver()}{nextManeuver()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_maneuver}{Maneuver}} $>$ Strategy\+::next\+Maneuver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Finds a suitable \mbox{\hyperlink{class_maneuver}{Maneuver}} to perform \begin{DoxyReturn}{Returns}
+Pointer to a \mbox{\hyperlink{class_maneuver}{Maneuver}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/strategy/Strategy.\+h\item 
+Bot/src/strategy/Strategy.\+cpp\end{DoxyCompactItemize}

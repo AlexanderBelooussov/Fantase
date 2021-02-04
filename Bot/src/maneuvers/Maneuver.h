@@ -10,6 +10,9 @@
 #include "../utils/game_info.h"
 
 class Maneuver {
+    /**
+     * Base maneuver class
+     */
 
 public:
     GameInfo & info;
@@ -19,8 +22,16 @@ public:
 
     Maneuver(GameInfo & info) : info(info) {};
 
+    /**
+     * This function will be called every tick by the bot
+     * Sets the controls
+     */
     virtual void step() = 0;
 
+    /**
+     * This function gets called every tick and is used for debugging
+     * @param renderer
+     */
     virtual void render(Renderer & renderer) {};
 };
 

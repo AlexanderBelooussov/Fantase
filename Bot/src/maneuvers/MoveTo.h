@@ -9,11 +9,13 @@
 #include "mechanics/drive.h"
 #include "Recovery.h"
 
-class MoveTo: public Maneuver {
+/**
+ * Maneuver used to to drive to a certain target
+ */
+class MoveTo : public Maneuver {
     Drive drive;
     Recovery recovery;
     bool recovering = false;
-
 
 
 public:
@@ -21,10 +23,11 @@ public:
     float speed = 2300;
 
 
-    MoveTo(GameInfo& info);
+    MoveTo(GameInfo &info);
 
-     virtual void step();
-    virtual void render(Renderer & renderer);
+    virtual void step();
+
+    virtual void render(Renderer &renderer);
 };
 
 

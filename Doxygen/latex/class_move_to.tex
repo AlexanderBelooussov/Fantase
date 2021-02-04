@@ -1,0 +1,76 @@
+\hypertarget{class_move_to}{}\doxysection{Move\+To Class Reference}
+\label{class_move_to}\index{MoveTo@{MoveTo}}
+
+
+{\ttfamily \#include $<$Move\+To.\+h$>$}
+
+Inheritance diagram for Move\+To\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_move_to}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_move_to_a6fe109eab271bece517b12cf53f2547e}\label{class_move_to_a6fe109eab271bece517b12cf53f2547e}} 
+{\bfseries Move\+To} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}})
+\item 
+virtual void \mbox{\hyperlink{class_move_to_aedf7fa6760db62eed5ff611b4286e435}{step}} ()
+\item 
+virtual void \mbox{\hyperlink{class_move_to_a2e2bdbf82f3c18c1a4a89c5d2895e2b6}{render}} (Renderer \&renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_move_to_a391819d9e462360cc0af80b9a6632d88}\label{class_move_to_a391819d9e462360cc0af80b9a6632d88}} 
+vec3 {\bfseries target}
+\item 
+\mbox{\Hypertarget{class_move_to_a6598f8f89b6651f3456c0209913140a0}\label{class_move_to_a6598f8f89b6651f3456c0209913140a0}} 
+float {\bfseries speed} = 2300
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_maneuver}{Maneuver}} used to to drive to a certain target 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_move_to_a2e2bdbf82f3c18c1a4a89c5d2895e2b6}\label{class_move_to_a2e2bdbf82f3c18c1a4a89c5d2895e2b6}} 
+\index{MoveTo@{MoveTo}!render@{render}}
+\index{render@{render}!MoveTo@{MoveTo}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Move\+To\+::render (\begin{DoxyParamCaption}\item[{Renderer \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function gets called every tick and is used for debugging 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}{Maneuver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_get_boost_acb647c32acfc919afd67d579a61a2a89}{Get\+Boost}}.
+
+\mbox{\Hypertarget{class_move_to_aedf7fa6760db62eed5ff611b4286e435}\label{class_move_to_aedf7fa6760db62eed5ff611b4286e435}} 
+\index{MoveTo@{MoveTo}!step@{step}}
+\index{step@{step}!MoveTo@{MoveTo}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Move\+To\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function will be called every tick by the bot Sets the controls 
+
+Implements \mbox{\hyperlink{class_maneuver_a320e146c413e0ca1201863254e7af69e}{Maneuver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_get_boost_a8c11afee1f6baeb7121b82d1213a39a2}{Get\+Boost}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/Move\+To.\+h\item 
+Bot/src/maneuvers/Move\+To.\+cpp\end{DoxyCompactItemize}

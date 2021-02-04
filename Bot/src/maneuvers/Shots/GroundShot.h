@@ -9,6 +9,10 @@
 
 #include "Shot.h"
 
+/**
+ * Shot Maneuver for hitting rolling balls
+ * @todo currently very much broken
+ */
 class GroundShot : public Shot{
     vec3 desired_position;
     float last_touch;
@@ -29,6 +33,8 @@ public:
     virtual void render(Renderer & renderer);
 
     void initialPrediction() override;
+
+    void approachShot(vec3 shot_direction, vec3 desired_position) override {};
 };
 
 bool groundShotPredictionCondition(Car& car, Ball& ball);

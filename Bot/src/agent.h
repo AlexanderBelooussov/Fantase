@@ -8,7 +8,9 @@
 #include "strategy/Strategy.h"
 #include <memory>
 
-
+/**
+ * Agent for the bot itself
+ */
 class Fantase : public Bot
 {
     GameInfo info;
@@ -27,7 +29,7 @@ class Fantase : public Bot
 
 
 public:
-    Albux(int index, int team, std::string name, Game & game);
+    Fantase(int index, int team, std::string name, Game & game);
 
     Input GetOutput(Game game);
 

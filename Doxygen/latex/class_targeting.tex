@@ -1,0 +1,51 @@
+\hypertarget{class_targeting}{}\doxysection{Targeting Class Reference}
+\label{class_targeting}\index{Targeting@{Targeting}}
+
+
+{\ttfamily \#include $<$Targeting.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_targeting_acc535aa0e64f6874176bcfbf3ef78984}\label{class_targeting_acc535aa0e64f6874176bcfbf3ef78984}} 
+{\bfseries Targeting} (const \mbox{\hyperlink{class_game_info}{Game\+Info}} \&info)
+\item 
+void \mbox{\hyperlink{class_targeting_a74a5f8cb2f9c8ab298c04a3ef0749517}{generate\+Opponent\+Cones}} ()
+\item 
+vec2 \mbox{\hyperlink{class_targeting_a7496a14a070aa224f800232cf739a491}{determine\+Shot\+Direction}} (vec3 ball\+\_\+position)
+\item 
+\mbox{\Hypertarget{class_targeting_a3f64ae7087f5bb89e4a655b0a1bdfcff}\label{class_targeting_a3f64ae7087f5bb89e4a655b0a1bdfcff}} 
+virtual void {\bfseries render} (Renderer \&renderer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class used for determining what direction to shoot at Looks at opponents position/direction and whether it can shoot at the goal 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_targeting_a7496a14a070aa224f800232cf739a491}\label{class_targeting_a7496a14a070aa224f800232cf739a491}} 
+\index{Targeting@{Targeting}!determineShotDirection@{determineShotDirection}}
+\index{determineShotDirection@{determineShotDirection}!Targeting@{Targeting}}
+\doxysubsubsection{\texorpdfstring{determineShotDirection()}{determineShotDirection()}}
+{\footnotesize\ttfamily vec2 Targeting\+::determine\+Shot\+Direction (\begin{DoxyParamCaption}\item[{vec3}]{ball\+\_\+position }\end{DoxyParamCaption})}
+
+Calculates the best direction to shoot the ball to 
+\begin{DoxyParams}{Parameters}
+{\em ball\+\_\+position} & Specifies the location off the ball, usually the predicted intercept point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2 Dimensional vector of the shot direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_targeting_a74a5f8cb2f9c8ab298c04a3ef0749517}\label{class_targeting_a74a5f8cb2f9c8ab298c04a3ef0749517}} 
+\index{Targeting@{Targeting}!generateOpponentCones@{generateOpponentCones}}
+\index{generateOpponentCones@{generateOpponentCones}!Targeting@{Targeting}}
+\doxysubsubsection{\texorpdfstring{generateOpponentCones()}{generateOpponentCones()}}
+{\footnotesize\ttfamily void Targeting\+::generate\+Opponent\+Cones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generates vision-\/like cones for each opponent Each cone is actually just 3 lines, and is used to see if a shot crosses an opponents path Should be done before calculating the direction of the shot 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/strategy/Targeting.\+h\item 
+Bot/src/strategy/Targeting.\+cpp\end{DoxyCompactItemize}

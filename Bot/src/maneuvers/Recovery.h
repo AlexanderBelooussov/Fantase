@@ -10,14 +10,17 @@
 #include "simulation/input.h"
 #include "Maneuver.h"
 
-class Recovery : public Maneuver
-{
+/**
+ * Maneuver for landing on wheels
+ */
+class Recovery : public Maneuver {
     Reorient reorient;
 public:
     vec3 target;
 
-    Recovery(GameInfo & info);
-    Recovery(GameInfo & info, vec3 target);
+    Recovery(GameInfo &info);
+
+    Recovery(GameInfo &info, vec3 target);
 
     void step();
 };

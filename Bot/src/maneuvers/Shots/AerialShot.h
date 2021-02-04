@@ -9,6 +9,11 @@
 #include <mechanics/aerial.h>
 #include "Shot.h"
 
+/**
+ * Aerial Shot Maneuver using RLU Aerial class
+ * @todo fix funky takeoff behaviour
+ * @todo fix aborting aerials
+ */
 class AerialShot: public Shot {
     Aerial aerial;
 public:

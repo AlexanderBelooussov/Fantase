@@ -1,0 +1,83 @@
+\hypertarget{class_speed_flip_kickoff}{}\doxysection{Speed\+Flip\+Kickoff Class Reference}
+\label{class_speed_flip_kickoff}\index{SpeedFlipKickoff@{SpeedFlipKickoff}}
+
+
+{\ttfamily \#include $<$Speed\+Flip\+Kickoff.\+h$>$}
+
+Inheritance diagram for Speed\+Flip\+Kickoff\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_speed_flip_kickoff}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_speed_flip_kickoff_a28ee36f150ffff96d928c40b30aa5361}\label{class_speed_flip_kickoff_a28ee36f150ffff96d928c40b30aa5361}} 
+{\bfseries Speed\+Flip\+Kickoff} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}}, bool \mbox{\hyperlink{class_speed_flip_kickoff_a3de1fbcd4f3f78fba5108c6721853a23}{diagonal}}, int \mbox{\hyperlink{class_speed_flip_kickoff_a058974357407938be8012bccf1ee8399}{xside}})
+\item 
+void \mbox{\hyperlink{class_speed_flip_kickoff_a199e1ccd3403c86f64da84b229fafbc8}{step}} () override
+\item 
+void \mbox{\hyperlink{class_speed_flip_kickoff_a87cffb8bcb3fed9cffbea6ba1aae506f}{render}} (Renderer \&renderer) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_speed_flip_kickoff_a3de1fbcd4f3f78fba5108c6721853a23}{diagonal}} = true
+\item 
+int \mbox{\hyperlink{class_speed_flip_kickoff_a058974357407938be8012bccf1ee8399}{xside}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kickoff using a speed flip Used for any non-\/center spawn \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]make diagonal spawns hit ball more centrally \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_speed_flip_kickoff_a87cffb8bcb3fed9cffbea6ba1aae506f}\label{class_speed_flip_kickoff_a87cffb8bcb3fed9cffbea6ba1aae506f}} 
+\index{SpeedFlipKickoff@{SpeedFlipKickoff}!render@{render}}
+\index{render@{render}!SpeedFlipKickoff@{SpeedFlipKickoff}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Speed\+Flip\+Kickoff\+::render (\begin{DoxyParamCaption}\item[{Renderer \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This function gets called every tick and is used for debugging 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}{Maneuver}}.
+
+\mbox{\Hypertarget{class_speed_flip_kickoff_a199e1ccd3403c86f64da84b229fafbc8}\label{class_speed_flip_kickoff_a199e1ccd3403c86f64da84b229fafbc8}} 
+\index{SpeedFlipKickoff@{SpeedFlipKickoff}!step@{step}}
+\index{step@{step}!SpeedFlipKickoff@{SpeedFlipKickoff}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Speed\+Flip\+Kickoff\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This function will be called every tick by the bot Sets the controls 
+
+Implements \mbox{\hyperlink{class_maneuver_a320e146c413e0ca1201863254e7af69e}{Maneuver}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_speed_flip_kickoff_a3de1fbcd4f3f78fba5108c6721853a23}\label{class_speed_flip_kickoff_a3de1fbcd4f3f78fba5108c6721853a23}} 
+\index{SpeedFlipKickoff@{SpeedFlipKickoff}!diagonal@{diagonal}}
+\index{diagonal@{diagonal}!SpeedFlipKickoff@{SpeedFlipKickoff}}
+\doxysubsubsection{\texorpdfstring{diagonal}{diagonal}}
+{\footnotesize\ttfamily bool Speed\+Flip\+Kickoff\+::diagonal = true}
+
+Whether the bot starts on the diagonal/closer spawn \mbox{\Hypertarget{class_speed_flip_kickoff_a058974357407938be8012bccf1ee8399}\label{class_speed_flip_kickoff_a058974357407938be8012bccf1ee8399}} 
+\index{SpeedFlipKickoff@{SpeedFlipKickoff}!xside@{xside}}
+\index{xside@{xside}!SpeedFlipKickoff@{SpeedFlipKickoff}}
+\doxysubsubsection{\texorpdfstring{xside}{xside}}
+{\footnotesize\ttfamily int Speed\+Flip\+Kickoff\+::xside = 1}
+
+Whether the bot starts on the positive x side or negative x side 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/\+Kickoff/Speed\+Flip\+Kickoff.\+h\item 
+Bot/src/maneuvers/\+Kickoff/Speed\+Flip\+Kickoff.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{class_maneuver}{}\doxysection{Maneuver Class Reference}
+\label{class_maneuver}\index{Maneuver@{Maneuver}}
+Inheritance diagram for Maneuver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.896552cm]{class_maneuver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_maneuver_af1d791504c452de1f80eeaf1a7268d9f}\label{class_maneuver_af1d791504c452de1f80eeaf1a7268d9f}} 
+{\bfseries Maneuver} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}})
+\item 
+virtual void \mbox{\hyperlink{class_maneuver_a320e146c413e0ca1201863254e7af69e}{step}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}{render}} (Renderer \&renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_info}{Game\+Info}} \& \mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}}
+\item 
+\mbox{\Hypertarget{class_maneuver_af500b628fd10ad72606592bff804239d}\label{class_maneuver_af500b628fd10ad72606592bff804239d}} 
+Input {\bfseries controls}
+\item 
+\mbox{\Hypertarget{class_maneuver_a60de1bf35192f0d636a18497b3fbb323}\label{class_maneuver_a60de1bf35192f0d636a18497b3fbb323}} 
+bool {\bfseries finished} = false
+\item 
+\mbox{\Hypertarget{class_maneuver_ae35b6536e892874477684ecd05e17b42}\label{class_maneuver_ae35b6536e892874477684ecd05e17b42}} 
+bool {\bfseries interuptable} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}\label{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}} 
+\index{Maneuver@{Maneuver}!render@{render}}
+\index{render@{render}!Maneuver@{Maneuver}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void Maneuver\+::render (\begin{DoxyParamCaption}\item[{Renderer \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+This function gets called every tick and is used for debugging 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_speed_flip_kickoff_a87cffb8bcb3fed9cffbea6ba1aae506f}{Speed\+Flip\+Kickoff}}, \mbox{\hyperlink{class_ground_shot_a51c30594cc60ccccd9f7dab90d28ca1c}{Ground\+Shot}}, \mbox{\hyperlink{class_dodge_shot_a8dcb924d8e1d0f16f44fdf0da9935ffc}{Dodge\+Shot}}, \mbox{\hyperlink{class_aerial_shot_a540fc211ff02452f367ee598c3dbbb10}{Aerial\+Shot}}, \mbox{\hyperlink{class_move_to_a2e2bdbf82f3c18c1a4a89c5d2895e2b6}{Move\+To}}, and \mbox{\hyperlink{class_get_boost_acb647c32acfc919afd67d579a61a2a89}{Get\+Boost}}.
+
+\mbox{\Hypertarget{class_maneuver_a320e146c413e0ca1201863254e7af69e}\label{class_maneuver_a320e146c413e0ca1201863254e7af69e}} 
+\index{Maneuver@{Maneuver}!step@{step}}
+\index{step@{step}!Maneuver@{Maneuver}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily virtual void Maneuver\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This function will be called every tick by the bot Sets the controls 
+
+Implemented in \mbox{\hyperlink{class_ground_shot_a9fbdfbbb94d3077ce374d4569a09d6df}{Ground\+Shot}}, \mbox{\hyperlink{class_dodge_shot_a1e3fe9162442b82d2a9e0105a9b0ece8}{Dodge\+Shot}}, \mbox{\hyperlink{class_aerial_shot_afd4b7344526f9596410bc99b0b328164}{Aerial\+Shot}}, \mbox{\hyperlink{class_speed_flip_kickoff_a199e1ccd3403c86f64da84b229fafbc8}{Speed\+Flip\+Kickoff}}, \mbox{\hyperlink{class_front_flip_kickoff_a9694e3b8e19e0cccd4dfa3157e2256dd}{Front\+Flip\+Kickoff}}, \mbox{\hyperlink{class_shot_a2a6c05902897b9e472abfd7e5fd9a72f}{Shot}}, \mbox{\hyperlink{class_recovery_ae6a89005a0d7754f4fecba1f0779fdc7}{Recovery}}, \mbox{\hyperlink{class_move_to_aedf7fa6760db62eed5ff611b4286e435}{Move\+To}}, and \mbox{\hyperlink{class_get_boost_a8c11afee1f6baeb7121b82d1213a39a2}{Get\+Boost}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}\label{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}} 
+\index{Maneuver@{Maneuver}!info@{info}}
+\index{info@{info}!Maneuver@{Maneuver}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_info}{Game\+Info}}\& Maneuver\+::info}
+
+Base maneuver class 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/Maneuver.\+h\end{DoxyCompactItemize}

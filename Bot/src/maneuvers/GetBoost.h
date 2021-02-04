@@ -8,13 +8,24 @@
 
 #include "MoveTo.h"
 
-class GetBoost: public MoveTo {
+/**
+ * Maneuver for getting boost
+ */
+class GetBoost : public MoveTo {
 public:
+    /**
+     * Index of the boost
+     */
     int boost = -1;
 
-    GetBoost(GameInfo& info);
+    GetBoost(GameInfo &info);
+
+    /**
+     * Finishes ones the targeted boost becomes inactive
+     */
     virtual void step();
-    virtual void render(Renderer & renderer);
+
+    virtual void render(Renderer &renderer);
 };
 
 

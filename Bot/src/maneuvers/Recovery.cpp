@@ -4,11 +4,11 @@
 
 #include "Recovery.h"
 
-Recovery::Recovery(GameInfo &info) : Maneuver(info), reorient(info.myCar), target(vec3{0,0,0}) {
+Recovery::Recovery(GameInfo &info) : Maneuver(info), reorient(info.myCar), target(vec3{0, 0, 0}) {
 
 }
 
-Recovery::Recovery(GameInfo &info, vec3 target) : Maneuver(info), reorient(info.myCar), target(target){
+Recovery::Recovery(GameInfo &info, vec3 target) : Maneuver(info), reorient(info.myCar), target(target) {
 
 }
 

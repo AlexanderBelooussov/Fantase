@@ -1,0 +1,91 @@
+\hypertarget{class_ground_shot}{}\doxysection{Ground\+Shot Class Reference}
+\label{class_ground_shot}\index{GroundShot@{GroundShot}}
+
+
+{\ttfamily \#include $<$Ground\+Shot.\+h$>$}
+
+Inheritance diagram for Ground\+Shot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ground_shot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ground_shot_ac308b59f8271ec902358dc5dc29543f3}\label{class_ground_shot_ac308b59f8271ec902358dc5dc29543f3}} 
+{\bfseries Ground\+Shot} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}})
+\item 
+void \mbox{\hyperlink{class_ground_shot_ad7a1b99b0e0393a67a97bce0de4c1b94}{update\+Prediction}} (const std\+::function$<$ bool(Car \&, Ball \&)$>$ \&cond) override
+\item 
+void \mbox{\hyperlink{class_ground_shot_a9fbdfbbb94d3077ce374d4569a09d6df}{step}} () override
+\item 
+virtual void \mbox{\hyperlink{class_ground_shot_a51c30594cc60ccccd9f7dab90d28ca1c}{render}} (Renderer \&renderer)
+\item 
+void \mbox{\hyperlink{class_ground_shot_a2e64a1bffb276e7cdfdb83e9d6928500}{initial\+Prediction}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_shot}{Shot}} \mbox{\hyperlink{class_maneuver}{Maneuver}} for hitting rolling balls \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]currently very much broken \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ground_shot_a2e64a1bffb276e7cdfdb83e9d6928500}\label{class_ground_shot_a2e64a1bffb276e7cdfdb83e9d6928500}} 
+\index{GroundShot@{GroundShot}!initialPrediction@{initialPrediction}}
+\index{initialPrediction@{initialPrediction}!GroundShot@{GroundShot}}
+\doxysubsubsection{\texorpdfstring{initialPrediction()}{initialPrediction()}}
+{\footnotesize\ttfamily void Ground\+Shot\+::initial\+Prediction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Look for a valid prediction slice Used before choosing to go for a shot 
+
+Reimplemented from \mbox{\hyperlink{class_shot_a51d505f4ad1c00a4f7ad8480830bfd16}{Shot}}.
+
+\mbox{\Hypertarget{class_ground_shot_a51c30594cc60ccccd9f7dab90d28ca1c}\label{class_ground_shot_a51c30594cc60ccccd9f7dab90d28ca1c}} 
+\index{GroundShot@{GroundShot}!render@{render}}
+\index{render@{render}!GroundShot@{GroundShot}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Ground\+Shot\+::render (\begin{DoxyParamCaption}\item[{Renderer \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function gets called every tick and is used for debugging 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}{Maneuver}}.
+
+\mbox{\Hypertarget{class_ground_shot_a9fbdfbbb94d3077ce374d4569a09d6df}\label{class_ground_shot_a9fbdfbbb94d3077ce374d4569a09d6df}} 
+\index{GroundShot@{GroundShot}!step@{step}}
+\index{step@{step}!GroundShot@{GroundShot}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Ground\+Shot\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This function will be called every tick by the bot Sets the controls 
+
+Reimplemented from \mbox{\hyperlink{class_shot_a2a6c05902897b9e472abfd7e5fd9a72f}{Shot}}.
+
+\mbox{\Hypertarget{class_ground_shot_ad7a1b99b0e0393a67a97bce0de4c1b94}\label{class_ground_shot_ad7a1b99b0e0393a67a97bce0de4c1b94}} 
+\index{GroundShot@{GroundShot}!updatePrediction@{updatePrediction}}
+\index{updatePrediction@{updatePrediction}!GroundShot@{GroundShot}}
+\doxysubsubsection{\texorpdfstring{updatePrediction()}{updatePrediction()}}
+{\footnotesize\ttfamily void Ground\+Shot\+::update\+Prediction (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(Car \&, Ball \&)$>$ \&}]{cond }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the prediction during the shot 
+\begin{DoxyParams}{Parameters}
+{\em cond} & Condition that the prediction slice must satisfy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_shot_a41252e5d86ccc9582e61c55a508f17ff}{Shot}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/\+Shots/Ground\+Shot.\+h\item 
+Bot/src/maneuvers/\+Shots/Ground\+Shot.\+cpp\end{DoxyCompactItemize}

@@ -10,7 +10,10 @@
 #include <mechanics/drive.h>
 #include <mechanics/dodge.h>
 #include "../Maneuver.h"
-
+/**
+ * Basic Kickoff using front flips
+ * Used for central spawn kickoffs
+ */
 class FrontFlipKickoff: public Maneuver {
     Drive drive;
     Reorient reorient;

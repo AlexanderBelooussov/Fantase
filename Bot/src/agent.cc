@@ -12,7 +12,7 @@
 #include "maneuvers/Kickoff/SpeedFlipKickoff.h"
 #include "maneuvers/Kickoff/FrontFlipKickoff.h"
 
-Albux::Fantase(int index, int team, std::string name, Game &game)
+Fantase::Fantase(int index, int team, std::string name, Game &game)
         : Bot::Bot(index, team, name), renderer(index), info(game, index, team) {
     Field::initialize_soccar();
     maneuver = nullptr;
@@ -21,6 +21,10 @@ Albux::Fantase(int index, int team, std::string name, Game &game)
 }
 
 Input Fantase::GetOutput(Game game) {
+    /**
+     * @return The controls teh bot wants to execute
+     */
+
     info.update();
 
 

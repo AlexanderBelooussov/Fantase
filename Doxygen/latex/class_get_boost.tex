@@ -1,0 +1,73 @@
+\hypertarget{class_get_boost}{}\doxysection{Get\+Boost Class Reference}
+\label{class_get_boost}\index{GetBoost@{GetBoost}}
+
+
+{\ttfamily \#include $<$Get\+Boost.\+h$>$}
+
+Inheritance diagram for Get\+Boost\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_get_boost}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_get_boost_a2d8cccabeb4c6c071693dcca97d83d75}\label{class_get_boost_a2d8cccabeb4c6c071693dcca97d83d75}} 
+{\bfseries Get\+Boost} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}})
+\item 
+virtual void \mbox{\hyperlink{class_get_boost_a8c11afee1f6baeb7121b82d1213a39a2}{step}} ()
+\item 
+virtual void \mbox{\hyperlink{class_get_boost_acb647c32acfc919afd67d579a61a2a89}{render}} (Renderer \&renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_get_boost_a062688431b177b05097d89563b41dfe6}{boost}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_maneuver}{Maneuver}} for getting boost 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_get_boost_acb647c32acfc919afd67d579a61a2a89}\label{class_get_boost_acb647c32acfc919afd67d579a61a2a89}} 
+\index{GetBoost@{GetBoost}!render@{render}}
+\index{render@{render}!GetBoost@{GetBoost}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Get\+Boost\+::render (\begin{DoxyParamCaption}\item[{Renderer \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function gets called every tick and is used for debugging 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_move_to_a2e2bdbf82f3c18c1a4a89c5d2895e2b6}{Move\+To}}.
+
+\mbox{\Hypertarget{class_get_boost_a8c11afee1f6baeb7121b82d1213a39a2}\label{class_get_boost_a8c11afee1f6baeb7121b82d1213a39a2}} 
+\index{GetBoost@{GetBoost}!step@{step}}
+\index{step@{step}!GetBoost@{GetBoost}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Get\+Boost\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Finishes ones the targeted boost becomes inactive 
+
+Reimplemented from \mbox{\hyperlink{class_move_to_aedf7fa6760db62eed5ff611b4286e435}{Move\+To}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_get_boost_a062688431b177b05097d89563b41dfe6}\label{class_get_boost_a062688431b177b05097d89563b41dfe6}} 
+\index{GetBoost@{GetBoost}!boost@{boost}}
+\index{boost@{boost}!GetBoost@{GetBoost}}
+\doxysubsubsection{\texorpdfstring{boost}{boost}}
+{\footnotesize\ttfamily int Get\+Boost\+::boost = -\/1}
+
+Index of the boost 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/Get\+Boost.\+h\item 
+Bot/src/maneuvers/Get\+Boost.\+cpp\end{DoxyCompactItemize}

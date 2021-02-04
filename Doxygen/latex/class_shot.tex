@@ -1,0 +1,139 @@
+\hypertarget{class_shot}{}\doxysection{Shot Class Reference}
+\label{class_shot}\index{Shot@{Shot}}
+
+
+{\ttfamily \#include $<$Shot.\+h$>$}
+
+Inheritance diagram for Shot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_shot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shot_a3f378a89571d80b82a90cbdcbae52152}\label{class_shot_a3f378a89571d80b82a90cbdcbae52152}} 
+{\bfseries Shot} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}})
+\item 
+virtual void \mbox{\hyperlink{class_shot_a41252e5d86ccc9582e61c55a508f17ff}{update\+Prediction}} (const std\+::function$<$ bool(Car \&, Ball \&)$>$ \&cond)
+\item 
+virtual void \mbox{\hyperlink{class_shot_a2a6c05902897b9e472abfd7e5fd9a72f}{step}} ()
+\item 
+virtual void \mbox{\hyperlink{class_shot_a51d505f4ad1c00a4f7ad8480830bfd16}{initial\+Prediction}} ()
+\item 
+virtual void \mbox{\hyperlink{class_shot_a4b8834aa22ebb2f3f96f13deefa3b378}{approach\+Shot}} (vec3 shot\+\_\+direction, vec3 desired\+\_\+position)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shot_ae9153c8cf1ab0930da8bb8e31eee8cfd}\label{class_shot_ae9153c8cf1ab0930da8bb8e31eee8cfd}} 
+float {\bfseries last\+\_\+update\+\_\+time}
+\item 
+bool \mbox{\hyperlink{class_shot_a448c08905cc81f940116597dee431223}{allow\+\_\+backwards}} = false
+\item 
+bool \mbox{\hyperlink{class_shot_a5f9c40a9c09a1fcedc86581ae068a1af}{backwards}} = false
+\item 
+\mbox{\Hypertarget{class_shot_aa0193dba952ddd4429eab0ba85a2eeff}\label{class_shot_aa0193dba952ddd4429eab0ba85a2eeff}} 
+\mbox{\hyperlink{class_prediction}{Prediction}} {\bfseries prediction}
+\item 
+\mbox{\hyperlink{class_targeting}{Targeting}} \mbox{\hyperlink{class_shot_a835b1349fa65018f7695d48f5d838a76}{targeting}}
+\item 
+\mbox{\Hypertarget{class_shot_a702f97550ffc629ed1170d94147bc21f}\label{class_shot_a702f97550ffc629ed1170d94147bc21f}} 
+\mbox{\hyperlink{class_move_to}{Move\+To}} {\bfseries move}
+\item 
+\mbox{\Hypertarget{class_shot_a3f856e1ee368ad58eae060a1f3e7afa6}\label{class_shot_a3f856e1ee368ad58eae060a1f3e7afa6}} 
+vec3 {\bfseries target}
+\item 
+\mbox{\Hypertarget{class_shot_aca0d303dfd0ba9d7af7376c521664849}\label{class_shot_aca0d303dfd0ba9d7af7376c521664849}} 
+float {\bfseries remaining\+\_\+time} = 9999
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base shot \mbox{\hyperlink{class_maneuver}{Maneuver}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shot_a4b8834aa22ebb2f3f96f13deefa3b378}\label{class_shot_a4b8834aa22ebb2f3f96f13deefa3b378}} 
+\index{Shot@{Shot}!approachShot@{approachShot}}
+\index{approachShot@{approachShot}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{approachShot()}{approachShot()}}
+{\footnotesize\ttfamily virtual void Shot\+::approach\+Shot (\begin{DoxyParamCaption}\item[{vec3}]{shot\+\_\+direction,  }\item[{vec3}]{desired\+\_\+position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+How the bot approiaches the shot 
+\begin{DoxyParams}{Parameters}
+{\em shot\+\_\+direction} & Vector of the direction we want to shoot at \\
+\hline
+{\em desired\+\_\+position} & The position we want to be before hitting the ball \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_aerial_shot_a22e45ac117efce319069f21762a82b66}{Aerial\+Shot}}.
+
+\mbox{\Hypertarget{class_shot_a51d505f4ad1c00a4f7ad8480830bfd16}\label{class_shot_a51d505f4ad1c00a4f7ad8480830bfd16}} 
+\index{Shot@{Shot}!initialPrediction@{initialPrediction}}
+\index{initialPrediction@{initialPrediction}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{initialPrediction()}{initialPrediction()}}
+{\footnotesize\ttfamily void Shot\+::initial\+Prediction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Look for a valid prediction slice Used before choosing to go for a shot 
+
+Reimplemented in \mbox{\hyperlink{class_ground_shot_a2e64a1bffb276e7cdfdb83e9d6928500}{Ground\+Shot}}, \mbox{\hyperlink{class_dodge_shot_a486b4ddf8e93d035826e3b1a06a169db}{Dodge\+Shot}}, and \mbox{\hyperlink{class_aerial_shot_a81c11381085228aa9c0a61ef4d4a6938}{Aerial\+Shot}}.
+
+\mbox{\Hypertarget{class_shot_a2a6c05902897b9e472abfd7e5fd9a72f}\label{class_shot_a2a6c05902897b9e472abfd7e5fd9a72f}} 
+\index{Shot@{Shot}!step@{step}}
+\index{step@{step}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Shot\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function will be called every tick by the bot Sets the controls 
+
+Implements \mbox{\hyperlink{class_maneuver_a320e146c413e0ca1201863254e7af69e}{Maneuver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_ground_shot_a9fbdfbbb94d3077ce374d4569a09d6df}{Ground\+Shot}}, \mbox{\hyperlink{class_dodge_shot_a1e3fe9162442b82d2a9e0105a9b0ece8}{Dodge\+Shot}}, and \mbox{\hyperlink{class_aerial_shot_afd4b7344526f9596410bc99b0b328164}{Aerial\+Shot}}.
+
+\mbox{\Hypertarget{class_shot_a41252e5d86ccc9582e61c55a508f17ff}\label{class_shot_a41252e5d86ccc9582e61c55a508f17ff}} 
+\index{Shot@{Shot}!updatePrediction@{updatePrediction}}
+\index{updatePrediction@{updatePrediction}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{updatePrediction()}{updatePrediction()}}
+{\footnotesize\ttfamily void Shot\+::update\+Prediction (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(Car \&, Ball \&)$>$ \&}]{cond }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Update the prediction during the shot 
+\begin{DoxyParams}{Parameters}
+{\em cond} & Condition that the prediction slice must satisfy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_ground_shot_ad7a1b99b0e0393a67a97bce0de4c1b94}{Ground\+Shot}}, \mbox{\hyperlink{class_dodge_shot_a658278e5a772aff3910d4fa2c132f779}{Dodge\+Shot}}, and \mbox{\hyperlink{class_aerial_shot_a9a9941acd458e1f37e26b50dd11a96dd}{Aerial\+Shot}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_shot_a448c08905cc81f940116597dee431223}\label{class_shot_a448c08905cc81f940116597dee431223}} 
+\index{Shot@{Shot}!allow\_backwards@{allow\_backwards}}
+\index{allow\_backwards@{allow\_backwards}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{allow\_backwards}{allow\_backwards}}
+{\footnotesize\ttfamily bool Shot\+::allow\+\_\+backwards = false}
+
+Whether the prediction can look for the bot to move backwards \mbox{\Hypertarget{class_shot_a5f9c40a9c09a1fcedc86581ae068a1af}\label{class_shot_a5f9c40a9c09a1fcedc86581ae068a1af}} 
+\index{Shot@{Shot}!backwards@{backwards}}
+\index{backwards@{backwards}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{backwards}{backwards}}
+{\footnotesize\ttfamily bool Shot\+::backwards = false}
+
+Whether we drive backwards to take the shot \mbox{\Hypertarget{class_shot_a835b1349fa65018f7695d48f5d838a76}\label{class_shot_a835b1349fa65018f7695d48f5d838a76}} 
+\index{Shot@{Shot}!targeting@{targeting}}
+\index{targeting@{targeting}!Shot@{Shot}}
+\doxysubsubsection{\texorpdfstring{targeting}{targeting}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_targeting}{Targeting}} Shot\+::targeting}
+
+\mbox{\hyperlink{class_targeting}{Targeting}} class for recalculating the shot direction during the approach 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/\+Shots/Shot.\+h\item 
+Bot/src/maneuvers/\+Shots/Shot.\+cpp\end{DoxyCompactItemize}

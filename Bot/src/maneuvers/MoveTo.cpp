@@ -6,14 +6,14 @@
 #include <iostream>
 #include "../utils/vector_math.h"
 
-MoveTo::MoveTo(GameInfo& info): Maneuver(info), drive(info.myCar), recovery(info) {}
+MoveTo::MoveTo(GameInfo &info) : Maneuver(info), drive(info.myCar), recovery(info) {}
 
 void MoveTo::step() {
     //drive
     if (not recovering and not info.myCar.on_ground) {
         recovering = true;
     }
-    if (not recovering){
+    if (not recovering) {
 
         drive.target = target;
         drive.speed = speed;

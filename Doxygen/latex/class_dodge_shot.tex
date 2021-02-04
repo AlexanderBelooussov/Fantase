@@ -1,0 +1,91 @@
+\hypertarget{class_dodge_shot}{}\doxysection{Dodge\+Shot Class Reference}
+\label{class_dodge_shot}\index{DodgeShot@{DodgeShot}}
+
+
+{\ttfamily \#include $<$Dodge\+Shot.\+h$>$}
+
+Inheritance diagram for Dodge\+Shot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dodge_shot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dodge_shot_a29ac8bb293cb90cfd7fd9ecf1eb485ad}\label{class_dodge_shot_a29ac8bb293cb90cfd7fd9ecf1eb485ad}} 
+{\bfseries Dodge\+Shot} (\mbox{\hyperlink{class_game_info}{Game\+Info}} \&\mbox{\hyperlink{class_maneuver_a84cd5b1e44d9ab19cfb50b18f801c069}{info}})
+\item 
+void \mbox{\hyperlink{class_dodge_shot_a658278e5a772aff3910d4fa2c132f779}{update\+Prediction}} (const std\+::function$<$ bool(Car \&, Ball \&)$>$ \&cond) override
+\item 
+void \mbox{\hyperlink{class_dodge_shot_a1e3fe9162442b82d2a9e0105a9b0ece8}{step}} () override
+\item 
+virtual void \mbox{\hyperlink{class_dodge_shot_a8dcb924d8e1d0f16f44fdf0da9935ffc}{render}} (Renderer \&renderer)
+\item 
+void \mbox{\hyperlink{class_dodge_shot_a486b4ddf8e93d035826e3b1a06a169db}{initial\+Prediction}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_shot}{Shot}} \mbox{\hyperlink{class_maneuver}{Maneuver}} for hitting low shots \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]fix approach/dodge \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dodge_shot_a486b4ddf8e93d035826e3b1a06a169db}\label{class_dodge_shot_a486b4ddf8e93d035826e3b1a06a169db}} 
+\index{DodgeShot@{DodgeShot}!initialPrediction@{initialPrediction}}
+\index{initialPrediction@{initialPrediction}!DodgeShot@{DodgeShot}}
+\doxysubsubsection{\texorpdfstring{initialPrediction()}{initialPrediction()}}
+{\footnotesize\ttfamily void Dodge\+Shot\+::initial\+Prediction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Look for a valid prediction slice Used before choosing to go for a shot 
+
+Reimplemented from \mbox{\hyperlink{class_shot_a51d505f4ad1c00a4f7ad8480830bfd16}{Shot}}.
+
+\mbox{\Hypertarget{class_dodge_shot_a8dcb924d8e1d0f16f44fdf0da9935ffc}\label{class_dodge_shot_a8dcb924d8e1d0f16f44fdf0da9935ffc}} 
+\index{DodgeShot@{DodgeShot}!render@{render}}
+\index{render@{render}!DodgeShot@{DodgeShot}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Dodge\+Shot\+::render (\begin{DoxyParamCaption}\item[{Renderer \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function gets called every tick and is used for debugging 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_maneuver_a73a604b2e83d46dd83518c52a2330c7e}{Maneuver}}.
+
+\mbox{\Hypertarget{class_dodge_shot_a1e3fe9162442b82d2a9e0105a9b0ece8}\label{class_dodge_shot_a1e3fe9162442b82d2a9e0105a9b0ece8}} 
+\index{DodgeShot@{DodgeShot}!step@{step}}
+\index{step@{step}!DodgeShot@{DodgeShot}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Dodge\+Shot\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This function will be called every tick by the bot Sets the controls 
+
+Reimplemented from \mbox{\hyperlink{class_shot_a2a6c05902897b9e472abfd7e5fd9a72f}{Shot}}.
+
+\mbox{\Hypertarget{class_dodge_shot_a658278e5a772aff3910d4fa2c132f779}\label{class_dodge_shot_a658278e5a772aff3910d4fa2c132f779}} 
+\index{DodgeShot@{DodgeShot}!updatePrediction@{updatePrediction}}
+\index{updatePrediction@{updatePrediction}!DodgeShot@{DodgeShot}}
+\doxysubsubsection{\texorpdfstring{updatePrediction()}{updatePrediction()}}
+{\footnotesize\ttfamily void Dodge\+Shot\+::update\+Prediction (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(Car \&, Ball \&)$>$ \&}]{cond }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the prediction during the shot 
+\begin{DoxyParams}{Parameters}
+{\em cond} & Condition that the prediction slice must satisfy \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_shot_a41252e5d86ccc9582e61c55a508f17ff}{Shot}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bot/src/maneuvers/\+Shots/Dodge\+Shot.\+h\item 
+Bot/src/maneuvers/\+Shots/Dodge\+Shot.\+cpp\end{DoxyCompactItemize}

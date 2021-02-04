@@ -32,5 +32,8 @@
 *.app
 Bot/build
 Bot/cmake-build-debug
-Bot/release
+Bot/release/my_bot.exe
+Bot/release/my_bot.ilk
+Bot/release/my_bot.pdb
+Bot/release/rlutilities.dll
 .idea
